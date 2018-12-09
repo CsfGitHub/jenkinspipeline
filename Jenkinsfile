@@ -31,7 +31,7 @@ stages{
                     steps {
                         //AMAZON EC2
                         sh "scp -i /Users/clemente.sanchez/Documents/DevTools/aws/tomcat-demo.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat7/webapps"
-                        //Localhost 8090
+                        //Localhost 8090 
                         //sh "cp  **/target/*.war /Users/clemente.sanchez/Documents/DevTools/apache-tomcat-9.0.13-staging/webapps/"
                     }
                 }
