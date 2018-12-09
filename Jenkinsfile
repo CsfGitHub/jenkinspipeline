@@ -36,7 +36,7 @@ stages{
 
                 stage ("Deploy to Production"){
                     steps {
-                        //F1rst in Ec2 tomact, second in local
+                        //F1rst in Ec2 tomact, second in local 
                         //sh "scp -i /Users/clemente.sanchez/Documents/DevTools/aws/tomcat-demo.pem **/target/*.war ec2-user@${params.tomcat_prod}:/var/lib/tomcat7/webapps"
                         sh "cp  **/target/*.war localhost:/Users/clemente.sanchez/Documents/DevTools/apache-tomcat-9.0.13-prd/webapps"
 
