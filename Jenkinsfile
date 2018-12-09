@@ -30,7 +30,7 @@ stages{
                 stage ('Deploy to Staging'){
                     steps {
                         //sh "scp -i /Users/clemente.sanchez/Documents/DevTools/aws/tomcat-demo.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat7/webapps"
-                        sh "scp  **/target/*.war tomcat@${params.tomcat_dev_local}:/Users/clemente.sanchez/Documents/DevTools/apache-tomcat-9.0.13-staging/webapps"
+                        sh "scp  **/target/*.war localhost:/Users/clemente.sanchez/Documents/DevTools/apache-tomcat-9.0.13-staging/webapps/"
                     }
                 }
 
